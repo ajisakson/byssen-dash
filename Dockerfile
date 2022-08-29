@@ -8,7 +8,6 @@ ENV ROCKET_ENV=staging
 WORKDIR /app
 COPY . .
 
-RUN cd server
 RUN cargo build --release
 
 CMD ROCKET_PORT=$PORT ./target/release/byssen-server
