@@ -1,29 +1,27 @@
 ---
-title: Vite React (TS)
-description: Example Vite app that is configured with React and Typescipt
+title: Rust Rocket
+description: A Rocket webserver
 tags:
-  - vite
-  - react
-  - typescript
+  - rust
+  - rocket
 ---
 
-# Vite + React + Typescript Example
-This example utilises vite for static site generation
+# Rust Rocket Example
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/duzltn?referralCode=OH27A5)
+This example is a [Rocket](https://rocket.rs) web server
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new?template=https%3A%2F%2Fgithub.com%2Frailwayapp%2Fexamples%2Ftree%2Fmaster%2Fexamples%2Frocket)
 
 ## ✨ Features
 
-- Vite
-- React
-- TypeScript
+- Rust
+- Rocket
 
 ## 💁‍♀️ How to use
 
-- Install dependencies `yarn`
-- Connect to your Railway project `railway link`
-- Start the development server `railway run yarn dev`
+- Run the server `cargo run`
 
 ## 📝 Notes
 
-The project is directly derived from the standard creation with some extra configuration to make sure it is quick and easy to get started on hosting your next site with railway. 
+By default, the Rocket server is started in staging mode. You can start in
+production mode by changing `ROCKET_ENV` in the `Dockerfile`.
